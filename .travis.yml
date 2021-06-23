@@ -31,6 +31,6 @@ deploy:
   bucket_path: $AWS_BUCKET_PATH
   on:
    branch: $AWS_BRANCH
-  access_key_id: $AWS_ACCESS_ID
-  secret_access_key: $AWS_ACCESS_SECRET
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
 
