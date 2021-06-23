@@ -21,3 +21,16 @@ after_success:
   - docker push nlrcmani/multi-server
   - docker push nlrcmani/multi-worker
 
+
+deploy:
+  provider: elasticbeanstalk
+  region: $AWS_REGION
+  app: $AWS_EBS_APP_NAME
+  env: $AWS_EBS_ENV_NAME
+  bucket_name: $AWS_BUCKET_NAME
+  bucket_path: $AWS_BUCKET_PATH
+  on:
+   branch: $AWS_BRANCH
+  access_key_id: $AWS_ACCESS_ID
+  secret_access_key: $AWS_ACCESS_SECRET
+
