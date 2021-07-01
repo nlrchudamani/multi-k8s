@@ -13,5 +13,5 @@ kubectl apply -f k8s
 
 kubectl set image deployments/client-deployment client=nlrcmani/multi_client:$SHA
 kubectl set image deployments/server-deployment server=nlrcmani/multi_server:$SHA
-kubectl set image deployments/worker-deployment client=nlrcmani/multi_worker:$SHA
+kubectl set image deployments/worker-deployment worker=nlrcmani/multi_worker:$SHA
 
